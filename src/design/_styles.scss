@@ -112,7 +112,7 @@ header {
     padding-right: 16px;
     display: inline-block;
     text-transform: uppercase;
-    color: #555;
+    color: white;
     letter-spacing: 0px;
     &:hover {
       color: $link;
@@ -258,4 +258,98 @@ select.invalid {
 
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.9);
+}
+.comingsoon{
+  background-color: black;
+  color: white;
+  height: 220px;
+  width: 50%;
+  margin: 50px auto;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: #ec31dd 7px 7px 10px;
+}
+.contact{
+  background-color: black;
+  color: white;
+  height: 220px;
+  width: 50%;
+  margin: 50px auto;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: #ec31dd 7px 7px 10px;
+}
+#contact-form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 100%;
+  /* Form outline */
+  padding: 1em;
+  
+}
+#contact-form h2 {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 110px;
+  text-align: left;
+}
+input, 
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+  margin-top: 5px;
+}
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+#contactbtn {
+  /* Align buttons with the text fields */
+  text-align: center; /* same size as the label elements */
+  margin-left: 110px;
+}
+
+@media only screen and (max-width: 500px) {
+  .comingsoon{
+    width: 70%;
+  }
+  .contact{
+    height: 300px;
+    padding: 1px;
+  }
+  input, 
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 100%;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+  margin-bottom: 5px;
+  margin-top: 0px;
+
+}
+#contact-form{
+  height: 100%;
+}
+#contactbtn {
+  /* Align buttons with the text fields */
+  text-align: center; /* same size as the label elements */
+  margin-left: 0px;
+}
 }

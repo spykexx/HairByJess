@@ -1,12 +1,12 @@
 <template>
   <div>
-    <transition-group name="slide" tag="div" class="imgslider" :class="getDirection">
+    <transition-group name="slide" tag="div" class="imgslider" >
       <div v-for="i in [currentIndex]" :key="i">
         <img class="sliderimg" :src="currentImg" />
       </div>
     </transition-group>
-    <a class="prev" @click="prev, setDirection('prev')" href="#" >&#10094; Previous</a>
-    <a class="next" @click="next, setDirection('next')" href="#">&#10095; Next</a>
+    <a class="prev" @click="prev" href="#" >&#10094; Previous</a>
+    <a class="next" @click="next" href="#">&#10095; Next</a>
   </div>
 </template>
 <script>
@@ -41,12 +41,7 @@ export default {
     prev: function() {
       this.currentIndex -= 1;
     },
-    setDirection: function(dir){
-        this.direction = dir;
-    },
-    getDirection: function(){
-        return direction;
-    },
+    
   },
 
   computed: {
